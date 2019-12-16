@@ -1,0 +1,488 @@
+@charset "utf-8";
+/* CSS Document for HYungWeb.html  2019 */
+
+
+
+.clearfix::after {
+				  content: "";
+				  clear: both;
+				  display: table;
+			     }
+ 
+.clearfix {
+		  overflow: auto;
+	    	}
+
+.page-wrapper {
+	           max-width: 2400px;
+			   margin-left: 200px;
+	           margin-right: 200px;
+			 }
+
+
+body {
+	  font-family: "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	  text-align: center;
+	  background-color: #000000;
+      }
+
+
+nav {
+ 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 15px;
+	}
+
+.myNav {    
+		height: 50px; 
+		color: #53A2DB;
+	    align-items: center;
+		}
+
+ul {
+		list-style-type: none; 
+		background-color: #FFFFFF;
+		padding: 0;
+	/*	margin: 2px;   */
+	}
+
+li {
+	float: left;
+	padding-top: 26px;
+	}
+
+
+li a {
+		color: #6995E4;
+		padding: 5px 70px;
+		text-decoration: none;
+		}
+
+
+
+
+
+li a:hover {
+ 			color: blue;
+			background-color: lavender;	
+			}
+
+.dropdown {
+			  float: left;
+			  overflow: hidden;
+			}
+
+
+.dropdown .dropbtn {
+					  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+					  font-size: 15px;  
+					  border: none;
+					  outline: none;
+					  color: #6995E4;
+					  background-color: #000000;
+					  margin: 0;
+					  padding: 5px 40px;
+					  padding-top: 0px;
+					}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  											background-color: #000000;
+								  		}
+
+
+
+.dropdown-content {
+				  display: none;
+				  position: absolute;
+				  background-color: #000000;
+				  min-width: 160px;
+				  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				  z-index: 1;
+				}
+
+.dropdown-content a {
+					  float: none;
+					  color: whitesmoke;
+					  padding: 12px 16px;
+					  text-decoration: none;
+					  display: block;
+					  text-align: center;
+					}
+
+.dropdown-content a:hover {
+					  background-color:  #000000;
+						}	
+
+.dropdown:hover .dropdown-content {
+									  display: block;
+									}
+
+
+
+
+
+h1 {
+	font-size: 50px;
+	color: #FFFFFF;
+	padding-top: 120px;
+	text-align: center;
+	}
+
+h2 {
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 60px;
+	}
+
+
+h3 {
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-top: 50px;
+	text-align: center;
+	}
+
+
+p {
+	color: #FFFFFF;
+ 	text-align: center;
+	font-size: 20px;
+	font-kerning: auto; 
+	padding-top: 30px;	
+	padding-bottom: 50px;	
+	}
+
+p a {
+		color: whitesmoke;	
+		text-decoration: none;
+   }
+
+table {
+	    color: #FFFFFF;
+	    vertical-align: middle;
+	    padding-top: 80px;
+	    padding-bottom: 80px;
+	    float: left;
+  	}		
+
+tr {
+	float: none;
+	margin-right: auto;
+	text-align: left;
+	}
+
+td {
+	padding: 10px;
+	font-size: 24px;
+	line-height: 1.5;
+   }
+
+td a {
+		color: #CF95E5;	
+		text-decoration: none;
+   }
+
+
+footer {
+	    text-align: center;
+	 	padding-top: 100px;
+		color: #FFFFFF;
+		}
+
+.carouselbox { width: 100%;
+			   position: relative;
+			   padding: 40px;
+			   
+	          }
+
+.rad { 
+		   border-radius: 10px;
+	
+}
+
+
+.radten { 
+		   border-radius: 50%;
+}	
+
+.content {	/* this carouselbox on top of page*/
+		  width: 80%;
+	      padding-top: 50px;
+	      padding-bottom: 30px;
+		}	
+
+
+.content li {
+             margin: 50px;
+             padding: 80px 80px;
+             width: 100%;
+             list-style: none;
+             text-align: center;
+	         float: left;
+             }
+
+/* index page */
+
+.rowone {
+     width: 95%;
+	 padding-top: 60px;
+	 margin-left: 2%
+     } 
+
+
+.columnIndex {
+		  float: left;
+		  width: 40%;
+		  padding-top: 50px;
+	      padding-bottom: 10px;
+	      margin-left: 2%;
+	   	}
+
+
+
+/* 2 column */
+.column {
+		  float: left;
+		  width: 40%;
+		  padding-top: 60px;
+	      padding-bottom: 10px;
+	      margin-left: 7%;
+	   	}
+
+/* 3 column */
+
+.columnthree {
+			  float: left;
+			  width: 30.3%;
+		      padding-top: 60px;
+	          padding-bottom: 10px;
+	          margin-left: 2%;
+
+			}
+
+ /* Clearfix (clear floats) */ 
+.row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			  padding-top: 60px;
+
+			}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+										  .column {
+											width: 100%;
+										  }
+										}
+
+/*  flex display
+.row {
+     display: flex;
+	 padding-top: 50px;
+     } 
+
+ Create three equal columns that sits next to each other 
+.column {
+		  flex: 50%;
+		  margin-left: 3%;
+                  margin-right: 3%;
+		  padding: 20px 5px 20px 5px;
+	          alignment-baseline: bottom;
+        }   
+*/
+ 
+
+
+ /*
+.leftbox { 	width: 40%;
+			height: 450px;
+		  	float:left;
+	        alignment-baseline: bottom;
+	        margin-right: 8px;
+		    padding-top: 20px;
+	        padding-left: 5%;
+	        padding-right: 50%;	
+	          }
+
+.rightbox { width: 40%;
+			height: auto;
+		  	float: right;
+			margin-right: 5%;
+	    	margin-left: 8px; 
+	          }
+
+.lft {
+  		 width: 100%;
+	     
+		}
+
+.rt {
+			 width: 100%;
+	     alignment-baseline: bottom;
+			}
+ */
+	
+
+.contact {
+	      font-family: "dancing-script";
+          color: #4F7354;
+		}
+
+
+.ppad {
+	     padding-top: 10px;
+	     }
+
+
+.h2pad {
+	 	padding-top: 150px;
+		}	
+
+.psty {
+	 	text-align: left;
+	     padding-top: 10px;
+	     font-size: 26px;
+         }
+
+.ppic {
+	    color: #000000;
+	
+       }
+
+.hyung {
+	   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	   text-align: left;
+	   padding-top: 5px;
+	   font-size: 40px;
+	   color: #E3D8E8;
+		
+}
+
+
+/* forms */
+
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+									  width: 100%;
+									  padding: 12px;
+									  border: 1px solid #ccc;
+									  border-radius: 4px;
+									  box-sizing: border-box;
+									  margin-top: 6px;
+									  margin-bottom: 16px;
+									  resize: vertical;
+	                                  background-color: whitesmoke;
+									}
+
+input[type=submit] {
+					  background-color: #4CAF50;
+					  color: white;
+					  padding: 12px 20px;
+					  border: none;
+					  border-radius: 4px;
+					  cursor: pointer;
+					}
+
+input[type=submit]:hover {
+							  background-color: #45a049;
+							}
+
+.container {
+			width: 60%;
+			margin-left: 20%;
+			margin-right: 20%;
+			border-radius: 5px;
+			background-color: black;
+			padding: 20px;
+	        padding-top: 80px;
+			text-align: left;
+	        color: whitesmoke;
+			}
+
+
+
+
+/* blog page */
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: black;
+	  background-color: #000000;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: lavender;
+   text-align: left;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+  .blogrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.h2blog {
+	color: black;
+	text-align: center;
+	padding-top: 10px;
+	}
+
+
+.h3blog {
+	color: black;
+	padding-top: 50px;
+	text-align: center;
+	}
+
+
+.pblog {
+	color: black;
+ 	text-align: left;
+	font-size: 20px;
+	font-kerning: auto; 
+	padding-top: 10px;	
+	}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
